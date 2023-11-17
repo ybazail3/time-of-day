@@ -19,10 +19,12 @@ Night (11pm to 5am)
 let myDate = new Date();
 let myHour = myDate.getHours();
 let day = myDate.getDay();
+let year = myDate.getFullYear();
 let myGreeting = "";
 let myColor = "";
 let myPic = "";
 let todayIs = day;
+
 
 if (myHour >= 5 && myHour < 12) {
   myGreeting = "Good Morning!";
@@ -66,3 +68,4 @@ document.getElementById("my-greeting").innerHTML = myGreeting;
 document.querySelector("html").style.backgroundColor = myColor;
 document.getElementById("my-pic").src = myPic;
 document.getElementById("today").innerHTML = todayIs;
+document.getElementById("year").innerHTML = year;

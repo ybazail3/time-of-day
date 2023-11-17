@@ -1,43 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Time of Day</title>
-    <meta name="robots" content="noindex,nofollow" />
-    <link rel="stylesheet" href="main.css" />
-  </head>
 
-  <body>
+<head>
+  <meta charset="utf-8" />
+  <title>Time of Day</title>
+  <meta name="robots" content="noindex,nofollow" />
+  <link rel="stylesheet" href="main.css" />
+</head>
+
+<body>
+  <header>
+    <h1 class="masthead">Time of Day</h1>
+  </header>
+  <main>
     <header>
-      <h1 class="masthead">Time of Day</h1>
+      <h3>A JavaScript Project by Yazmin</h3>
     </header>
-    <main>
-      <header>
-        <h3>A JavaScript Project by Yazmin</h3>
-      </header>
-      <h3 id="my-greeting"></h3>
-      <p id="today"></p>
+    <h3 id="my-greeting"></p></h3>
+    <p id="today"></p>
+    <p class="desc">
+      This page will let you know what day it is and what "time" of day it is. This page uses the JavaScript date
+      reference to
+      display time and day. Created an if statement to loop through this criteria: Morning (5am to 12 noon), Afternoon
+      (12 noon to 6pm), Evening (6pm to 11pm), Night (11pm to 5am). Images, phrases, and colors were also used to
+      display the time. For example, "good morning!" has a background color of light yellow and a good morning image.
+      Javascript date referenced was used to grab the time of day, day (Tuesday), and year:
+      <pre><code>
+        let myDate = new Date();
+        let myHour = myDate.getHours();
+        let day = myDate.getDay();
+        let year = myDate.getFullYear()
+      </code></pre>
+    </p>
+    <img src="http://dummyimage.com/300x400" alt="Time of Day Image" class="flexible" id="my-pic" />
+    <footer>
       <p>
-        This page will let you know what day it is and what "time" of day it is
-        based on phrases. This page uses the JavaScript date reference to
-        display time and day.
+        <small>&copy; 2022-
+          <div id="year">year</div>
+          by YAZMIN BAZAIL, All Rights Reserved ~<a id="html-checker" href="#" target="_blank">Check HTML</a>
+          ~<a id="css-checker" href="#" target="_blank">Check CSS</a>
+        </small>
       </p>
-      <img
-        src="http://dummyimage.com/300x400"
-        alt="Time of Day Image"
-        class="flexible"
-        id="my-pic"
-      />
-      <footer>
-        <p>
-          <small
-            >&copy; 2023 by YAZMIN BAZAIL, All Rights Reserved ~
-            <a id="html-checker" href="#" target="_blank">Check HTML</a> ~
-            <a id="css-checker" href="#" target="_blank">Check CSS</a></small
-          >
-        </p>
-      </footer>
-    </main>
-    <script src="main.js"></script>
-  </body>
+    </footer>
+  </main>
+  <script src="main.js"></script>
+</body>
+
 </html>
